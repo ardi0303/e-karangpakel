@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/card">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="?selectableItemBackground">
+
+        <TextView
+            android:id="@+id/tvTglBeli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tgl beli"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Beli"
+            android:layout_below="@id/tvTglBeli"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Beli"
+            android:layout_below="@id/tvTotal"
+            android:textColor="@color/black">
+        </TextView>
+        <TextView
+            android:id="@+id/tvResi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Beli"
+            android:layout_below="@id/tvStatus"
+            android:textColor="@color/black">
+        </TextView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentRight="true"
+            android:text="Bayar"
+            android:id="@+id/btBayar"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

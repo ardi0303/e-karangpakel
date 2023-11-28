@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/card">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="?selectableItemBackground">
+
+        <TextView
+            android:id="@+id/tvNamaBrg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Barang"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvJmlBeli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Beli"
+            android:layout_below="@id/tvNamaBrg"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:onClick="edit_barang"
+                android:src="@drawable/ic_baseline_edit_24">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:paddingTop="10dp"
+                android:layout_marginRight="38dp"
+                android:layout_toLeftOf="@id/ivEdit"
+                android:onClick="edit_barang"
+                android:src="@drawable/ic_baseline_delete_24">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
